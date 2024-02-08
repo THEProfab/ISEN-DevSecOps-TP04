@@ -1,5 +1,5 @@
 {
-  "name": "Eco-track",
+  "name": "TP04-GitHub-Actions",
   "version": "1.0.0",
   "description": "Projet ISEN AP5",
   "main": "index.js",
@@ -9,8 +9,8 @@
     "watch": "webpack --mode=development --watch",
     "start": "webpack serve --hot --mode=development"
   },
-  "author": "Marc BAYART / Loïc CLEDELIN / César DUVAL / Etienne EL GUEDER / Allan MATANGA / Clément ZAJAC",
-  "homepage": "",
+  "author": "Marc BAYART - Etienne EL GUEDER",
+  "homepage": "https://THEProfab.TP04-GitHub-Actions",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.20.7",
