@@ -1,0 +1,27 @@
+name: Deploy - GitHub Actions Workflow
+# Define when the workflow should be triggered
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+# Define jobs for the workflow
+jobs:
+  # Job: Build
+  build:
+    runs-on: alpine-latest
+    # Steps for the build job
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy
+        run: gh-pages -d dist
